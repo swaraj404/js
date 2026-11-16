@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 7.3</title>
+</head>
+<body>
+  <h2>Union of Sets</h2>
+  <script>
+    var setA = new Set(['apple', 'mango', 'orange']);
+    var setB = new Set(['grapes', 'apple', 'banana']);
+    var unionSet = new Set(setA);
+
+    for (var i of setB) {
+      unionSet.add(i);
+    }
+
+    document.write(unionSet);
+  </script>
+</body>
+</html>

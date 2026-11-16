@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 7.4</title>
+</head>
+<body>
+  <h2>Intersection of Sets</h2>
+  <script>
+    var setA = new Set(['apple', 'mango', 'orange']);
+    var setB = new Set(['grapes', 'apple', 'banana']);
+    var result = new Set();
+
+    for (var i of setB) {
+      if (setA.has(i)) {
+        result.add(i);
+      }
+    }
+
+    document.write(result);
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 6.2</title>
+</head>
+<body>
+  <h2>Remove Item</h2>
+  <script>
+    var arr = [1, 2, 3, 4, 5];
+    var remove = 2;
+    var newArr = [];
+
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] !== remove) {
+        newArr.push(arr[i]);
+      }
+    }
+
+    document.write(newArr);
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 7.5</title>
+</head>
+<body>
+  <h2>Difference of Sets</h2>
+  <script>
+    var setA = new Set(['apple', 'mango', 'orange']);
+    var setB = new Set(['grapes', 'apple', 'banana']);
+    var result = new Set(setA);
+
+    for (var i of setB) {
+      result.delete(i);
+    }
+
+    document.write(result);
+  </script>
+</body>
+</html>

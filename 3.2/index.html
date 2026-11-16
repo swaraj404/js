@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 3.2</title>
+</head>
+<body>
+  <h2>Replace Word</h2>
+  Text: <input type="text" id="text" value="Mr Red has a red house"><br><br>
+  Replace: <input type="text" id="oldText" value="red"><br><br>
+  With: <input type="text" id="newText" value="blue"><br><br>
+  <button onclick="replaceWord()">Replace</button>
+  <p id="result"></p>
+
+  <script>
+    function replaceWord() {
+      var text = document.getElementById('text').value;
+      var oldText = document.getElementById('oldText').value;
+      var newText = document.getElementById('newText').value;
+
+      var result = text.replace(oldText, newText);
+      document.getElementById('result').innerHTML = 'Result: ' + result;
+    }
+  </script>
+</body>
+</html>

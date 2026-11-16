@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 3.3</title>
+</head>
+<body>
+  <h2>Palindrome Check</h2>
+  Enter text: <input type="text" id="text" value="racecar"><br><br>
+  <button onclick="checkPalindrome()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function checkPalindrome() {
+      var text = document.getElementById('text').value.toLowerCase();
+      var reverse = text.split('').reverse().join('');
+
+      if (text === reverse) {
+        document.getElementById('result').innerHTML = 'It is a palindrome';
+      } else {
+        document.getElementById('result').innerHTML = 'It is not a palindrome';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 4.1</title>
+</head>
+<body>
+  <h2>Compare Strings</h2>
+  String 1: <input type="text" id="str1" value="JavaScript"><br><br>
+  String 2: <input type="text" id="str2" value="javascript"><br><br>
+  <button onclick="compare()">Compare</button>
+  <p id="result"></p>
+
+  <script>
+    function compare() {
+      var a = document.getElementById('str1').value;
+      var b = document.getElementById('str2').value;
+
+      if (a.toUpperCase() === b.toUpperCase()) {
+        document.getElementById('result').innerHTML = 'Strings are same';
+      } else {
+        document.getElementById('result').innerHTML = 'Strings are different';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Practical 3.4</title>
+</head>
+<body>
+  <h2>Palindrome Number</h2>
+  Enter number: <input type="number" id="num" value="121"><br><br>
+  <button onclick="checkNumber()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function checkNumber() {
+      var num = document.getElementById('num').value;
+      var reverse = num.split('').reverse().join('');
+
+      if (num === reverse) {
+        document.getElementById('result').innerHTML = 'It is a palindrome number';
+      } else {
+        document.getElementById('result').innerHTML = 'It is not a palindrome number';
+      }
+    }
+  </script>
+</body>
+</html>
